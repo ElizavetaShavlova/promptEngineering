@@ -6,7 +6,7 @@ This repository is a collection of prompts for chatGPT. It showcases a variety o
 
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
-- [Contact](#contact)
+- [Contacts](#contact)
 
 ## Getting Started
 
