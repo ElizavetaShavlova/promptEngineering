@@ -6,7 +6,7 @@ The prompt cheatsheet folder includes a set of straightforward and comprehensibl
 
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Contact](#contact)
+- [Contacts](#contact)
 
 ## Usage
 
