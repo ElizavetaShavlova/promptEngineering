@@ -30,4 +30,6 @@ To contribute, please follow these guidelines:
 
 ## Contacts
 
-Elizaveta Shavlova - [LinkedIn](https://www.linkedin.com/in/elizaveta-shavlova/)
+For any questions, suggestions, comments, please contact [eliza260926@gmail](mailto:eliza260926@gmail)
+
+Also you can contact Elizaveta Shavlova via [LinkedIn](https://www.linkedin.com/in/elizaveta-shavlova/)
