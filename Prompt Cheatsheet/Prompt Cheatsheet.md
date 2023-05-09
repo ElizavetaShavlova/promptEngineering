@@ -1,10 +1,24 @@
-# Prompt Cheatsheet: Basics
+<!-- vscode-markdown-toc -->
 
-## Table of Contents
+- 1. [Basics](#Basics)
+  - 1.1. [Set a role](#Setarole)
+  - 1.2. [Give an instructions](#Giveaninstructions)
+  - 1.3. [Set a particular style or tone](#Setaparticularstyleortone)
+  - 1.4. [Specify output format](#Specifyoutputformat)
+  - 1.5. [Few shot Prompting](#FewshotPrompting)
+  - 1.6. [Step by step thinking](#Stepbystepthinking)
+  - 1.7. [Priming Prompting](#PrimingPrompting)
+- 2. [Intermediate](#Intermediate)
 
-TBD
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
 
-## Set a role
+## 1. <a name='Basics'></a>Basics
+
+### 1.1. <a name='Setarole'></a>Set a role
 
 > The role prompting technique involves designating a particular role to the AI.
 
@@ -16,7 +30,7 @@ TBD
 Act as professional software developer with 10+ years experience in С#. Give me 10 best practice of unit-test in C# creation.
 ```
 
-## Give an instructions
+### 1.2. <a name='Giveaninstructions'></a>Give an instructions
 
 **Prompt example:**
 
@@ -30,7 +44,7 @@ Use a combination of scholarly research and anecdotal evidence to support your a
 Finally, consider the broader implications of this issue and discuss the role of individuals, businesses, and policymakers in addressing this important public health concern.
 ```
 
-## Set a particular style or tone
+### 1.3. <a name='Setaparticularstyleortone'></a>Set a particular style or tone
 
 > Tone refers to the attitude or feeling that the writer conveys through their words. It's the emotional quality of the writing that can influence the reader's response. Tone can be conveyed through a variety of factors, such as the choice of words, the use of figurative language, and the overall mood of the text.
 > Some examples of tone:
@@ -83,7 +97,7 @@ Write a one-paragraph message about system design. Use a ROMANTIC tone.
 Write a one-paragraph message about dogs growing up. Use a POLITICAL style. Write in the second person.
 ```
 
-## Specify output format
+### 1.4. <a name='Specifyoutputformat'></a>Specify output format
 
 > Some examples of output formats:
 >
@@ -102,7 +116,7 @@ Generate a text "How to make a delicious smoothie".
 Use Bullet points, Numbered list, Table view, Subheadings, Quotations, Code snippets, Definitions, Examples , Comparisons, Instructions.
 ```
 
-## Few shot Prompting
+### 1.5. <a name='FewshotPrompting'></a>Few shot Prompting
 
 > "Few shot prompting" technique shows the model a few examples (called shots) of what you want it to do.
 > Each input-output pair is called an exemplar.
@@ -149,7 +163,7 @@ Introducing Emily Nguyen, a skilled graphic designer with 7 years of experience 
 Working alongside Emily is Michael Patel, a recent graduate with just 6 months of experience in the design industry. Despite his relative lack of experience, Michael is a fast learner and is eager to apply his knowledge to real-world design projects. He has worked on several smaller projects, including the design of a social media banner and the creation of an infographic for a client.
 ```
 
-## Step by step thinking
+### 1.6. <a name='Stepbystepthinking'></a>Step by step thinking
 
 > Note: You should always use step-by-step when solving math problems. First, the AI produces more accurate results this way. Secondly, in case of an error, it is easier to check and understand at what stage it occurred.
 
@@ -164,7 +178,7 @@ What is 100*100/400*56?
 Think step by step
 ```
 
-## Priming Prompt
+### 1.7. <a name='PrimingPrompting'></a>Priming Prompting
 
 > The form of the first prompt can affect the remainder of the conversation. However, it's important to note that adding specificity to each prompt can still be beneficial, as the model may struggle to maintain focus on the primer over time.
 
@@ -184,3 +198,5 @@ Example: (Elizaveta){Quality Assurance}[Respond] What is the advantage of explor
 
 If you understand and are ready to start, respond with only “yes.”
 ```
+
+## 2. <a name='Intermediate'></a>Intermediate
