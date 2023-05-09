@@ -1,4 +1,4 @@
-<!-- vscode-markdown-toc -->
+# Prompt Cheatsheet
 
 - 1. [Basics](#Basics)
   - 1.1. [Set a role](#Setarole)
@@ -9,12 +9,8 @@
   - 1.6. [Step by step thinking](#Stepbystepthinking)
   - 1.7. [Priming Prompting](#PrimingPrompting)
 - 2. [Intermediate](#Intermediate)
-
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
+  - 2.1. [Chain of Thought Prompting](#ChainofThoughtPrompting)
+  - 2.2. [Zero Shot Chain of Thought (Step-by-step)](#ZeroShotChainofThoughtStep-by-step)
 
 ## 1. <a name='Basics'></a>Basics
 
@@ -200,3 +196,35 @@ If you understand and are ready to start, respond with only “yes.”
 ```
 
 ## 2. <a name='Intermediate'></a>Intermediate
+
+### 2.1. <a name='ChainofThoughtPrompting'></a>Chain of Thought Prompting
+
+> The Chain of Thought (CoT) prompting method is an approach that encourages LLMs to formulate their thought process and reasoning. The fundamental concept behind CoT is that by providing the LLM with a few-shot set of examples where the reasoning process is explicitly explained, the LLM will also demonstrate its own reasoning process when generating a response to a prompt.
+
+**Prompt example:**
+
+```
+Option 1: Take a 1000 minute bus, then a half hour train, and finally a 10 minute bike ride.
+Option 2: Take an 800 minute bus, then an hour train, and finally a 30 minute bike ride.
+To calculate the travel time for Option 1, we add the time for each leg: 1000 + 30 + 10 = 1040 minutes.
+To calculate the travel time for Option 2, we add the time for each leg: 800 + 60 + 30 = 890 minutes.
+Since Option 2 takes 890 minutes and Option 1 takes 1040 minutes, Option 2 is faster.
+
+Which is a faster way to get to work?
+Option 1: Take an 20 minutes bus, then an 40 minute bus, and finally a 10 minute train.
+Option 2: Take a 90 minutes train, then a 25 minute bike ride, and finally a 10 minute bus.
+```
+
+### 2.2. <a name='ZeroShotChainofThoughtStep-by-step'></a>Zero Shot Chain of Thought (Step-by-step)
+
+> Use this technique when making few shots for CoT prompting is difficult and when you want to see intermediate results.
+
+**Prompt example:**
+
+```
+Which is a faster way to get to work?
+Option 1: Take a 700 minute bus, then a half hour train, and finally a 10 minute bike ride.
+Option 2: Take an 850 minute bus, then an hour train, and finally a 30 minute bike ride.
+
+Let's think step by step.
+```
