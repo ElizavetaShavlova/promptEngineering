@@ -4,7 +4,7 @@
 
 - [Set a role](#set-a-role)
 - [Give an instructions](#give-an-instructions)
-- [Set a particular style or tone](#basics)
+- [Set a particular style or tone](#set-a-particular-style-or-tone)
 - [Specify output format](#specify-output-format)
 - [Few shot Prompting](#few-shot-prompting)
 - [Priming Prompting](#priming-prompting)
@@ -13,6 +13,7 @@
 
 - [Chain of Thought Prompting (CoT)](#chain-of-thought-prompting)
 - [Zero Shot Chain of Thought](#zero-shot-chain-of-thought)
+- [Generated Knowledge](#generated-knowledge)
 
 ## Basics
 
@@ -227,4 +228,24 @@ Attempt to solve the following problem:
 What is 100*100/400*56?
 
 Let's think step by step.
+```
+
+### Generated Knowledge
+
+> The generated knowledge approach involves asking the LLM to provide valuable information on a particular query or prompt before generating a final response. There are 2 methods of implementing this approach. The first -- requesting a single Prompt to generate data and generating a response based on that data. The second is to request in the first sample to generate data only, and in the second sample to request to generate text based on the received data.
+
+**An example using two prompts:**
+
+First:
+
+```
+Generate 3 facts about the usage of peppermint essential oil.
+```
+
+Next:
+
+```
+<A copy-paste of the facts from the reply I received>
+
+Write a blogpost about the usage of peppermint essential oil based on facts above:
 ```
