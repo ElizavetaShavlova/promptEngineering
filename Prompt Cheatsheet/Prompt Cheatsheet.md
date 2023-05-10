@@ -1,20 +1,22 @@
-# Prompt Cheatsheet
+## Table of Contents
 
-- 1. [Basics](#Basics)
-  - 1.1. [Set a role](#Setarole)
-  - 1.2. [Give an instructions](#Giveaninstructions)
-  - 1.3. [Set a particular style or tone](#Setaparticularstyleortone)
-  - 1.4. [Specify output format](#Specifyoutputformat)
-  - 1.5. [Few shot Prompting](#FewshotPrompting)
-  - 1.6. [Step by step thinking](#Stepbystepthinking)
-  - 1.7. [Priming Prompting](#PrimingPrompting)
-- 2. [Intermediate](#Intermediate)
-  - 2.1. [Chain of Thought Prompting](#ChainofThoughtPrompting)
-  - 2.2. [Zero Shot Chain of Thought (Step-by-step)](#ZeroShotChainofThoughtStep-by-step)
+1. [Basics](#basics)
 
-## 1. <a name='Basics'></a>Basics
+- [Set a role](#set-a-role)
+- [Give an instructions](#give-an-instructions)
+- [Set a particular style or tone](#basics)
+- [Specify output format](#specify-output-format)
+- [Few shot Prompting](#few-shot-prompting)
+- [Priming Prompting](#priming-prompting)
 
-### 1.1. <a name='Setarole'></a>Set a role
+2. [Intermediate](#intermediate)
+
+- [Chain of Thought Prompting (CoT)](#chain-of-thought-prompting)
+- [Zero Shot Chain of Thought](#zero-shot-chain-of-thought)
+
+## Basics
+
+### Set a role
 
 > The role prompting technique involves designating a particular role to the AI.
 
@@ -26,7 +28,7 @@
 Act as professional software developer with 10+ years experience in С#. Give me 10 best practice of unit-test in C# creation.
 ```
 
-### 1.2. <a name='Giveaninstructions'></a>Give an instructions
+### Give an instructions
 
 **Prompt example:**
 
@@ -40,7 +42,7 @@ Use a combination of scholarly research and anecdotal evidence to support your a
 Finally, consider the broader implications of this issue and discuss the role of individuals, businesses, and policymakers in addressing this important public health concern.
 ```
 
-### 1.3. <a name='Setaparticularstyleortone'></a>Set a particular style or tone
+### Set a particular style or tone
 
 > Tone refers to the attitude or feeling that the writer conveys through their words. It's the emotional quality of the writing that can influence the reader's response. Tone can be conveyed through a variety of factors, such as the choice of words, the use of figurative language, and the overall mood of the text.
 > Some examples of tone:
@@ -93,7 +95,7 @@ Write a one-paragraph message about system design. Use a ROMANTIC tone.
 Write a one-paragraph message about dogs growing up. Use a POLITICAL style. Write in the second person.
 ```
 
-### 1.4. <a name='Specifyoutputformat'></a>Specify output format
+### Specify output format
 
 > Some examples of output formats:
 >
@@ -112,7 +114,7 @@ Generate a text "How to make a delicious smoothie".
 Use Bullet points, Numbered list, Table view, Subheadings, Quotations, Code snippets, Definitions, Examples , Comparisons, Instructions.
 ```
 
-### 1.5. <a name='FewshotPrompting'></a>Few shot Prompting
+### Few shot Prompting
 
 > "Few shot prompting" technique shows the model a few examples (called shots) of what you want it to do.
 > Each input-output pair is called an exemplar.
@@ -159,22 +161,7 @@ Introducing Emily Nguyen, a skilled graphic designer with 7 years of experience 
 Working alongside Emily is Michael Patel, a recent graduate with just 6 months of experience in the design industry. Despite his relative lack of experience, Michael is a fast learner and is eager to apply his knowledge to real-world design projects. He has worked on several smaller projects, including the design of a social media banner and the creation of an infographic for a client.
 ```
 
-### 1.6. <a name='Stepbystepthinking'></a>Step by step thinking
-
-> Note: You should always use step-by-step when solving math problems. First, the AI produces more accurate results this way. Secondly, in case of an error, it is easier to check and understand at what stage it occurred.
-
-**Prompt example:**
-
-```
-You are a brilliant mathematician who can solve any problem in the world.
-
-Attempt to solve the following problem:
-What is 100*100/400*56?
-
-Think step by step
-```
-
-### 1.7. <a name='PrimingPrompting'></a>Priming Prompting
+### Priming Prompting
 
 > The form of the first prompt can affect the remainder of the conversation. However, it's important to note that adding specificity to each prompt can still be beneficial, as the model may struggle to maintain focus on the primer over time.
 
@@ -195,9 +182,9 @@ Example: (Elizaveta){Quality Assurance}[Respond] What is the advantage of explor
 If you understand and are ready to start, respond with only “yes.”
 ```
 
-## 2. <a name='Intermediate'></a>Intermediate
+## Intermediate
 
-### 2.1. <a name='ChainofThoughtPrompting'></a>Chain of Thought Prompting
+### Chain of Thought Prompting
 
 > The Chain of Thought (CoT) prompting method is an approach that encourages LLMs to formulate their thought process and reasoning. The fundamental concept behind CoT is that by providing the LLM with a few-shot set of examples where the reasoning process is explicitly explained, the LLM will also demonstrate its own reasoning process when generating a response to a prompt.
 
@@ -215,7 +202,7 @@ Option 1: Take an 20 minutes bus, then an 40 minute bus, and finally a 10 minute
 Option 2: Take a 90 minutes train, then a 25 minute bike ride, and finally a 10 minute bus.
 ```
 
-### 2.2. <a name='ZeroShotChainofThoughtStep-by-step'></a>Zero Shot Chain of Thought (Step-by-step)
+### Zero Shot Chain of Thought
 
 > Use this technique when making few shots for CoT prompting is difficult and when you want to see intermediate results.
 
@@ -225,6 +212,19 @@ Option 2: Take a 90 minutes train, then a 25 minute bike ride, and finally a 10 
 Which is a faster way to get to work?
 Option 1: Take a 700 minute bus, then a half hour train, and finally a 10 minute bike ride.
 Option 2: Take an 850 minute bus, then an hour train, and finally a 30 minute bike ride.
+
+Let's think step by step.
+```
+
+> Use step-by-step when solving math problems. First, the AI produces more accurate results this way. Secondly, in case of an error, it is easier to check and understand at what stage it occurred.
+
+**Prompt example:**
+
+```
+You are a brilliant mathematician who can solve any problem in the world.
+
+Attempt to solve the following problem:
+What is 100*100/400*56?
 
 Let's think step by step.
 ```

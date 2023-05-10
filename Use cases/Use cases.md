@@ -1,9 +1,9 @@
 # Use cases
 
-1. [Structuring data](#Structuringdata)
-1. [Writing emails](#Writingemails)
+1. [Structuring data](#structuring-data)
+1. [Writing emails](#writing-emails)
 
-## 1. <a name='Structuringdata'></a>Structuring data
+## Structuring data
 
 > If you have a set of news articles or business reports and want to extract and summarize the key information into a table for further use, Chat bots like ChatGPT can assist you in accomplishing this task.
 
@@ -14,7 +14,7 @@ Create a table containing this information.
 
 ```
 
-## 2. <a name='Writingemails'></a>Writing emails
+## Writing emails
 
 ```
 Me: Ekaterina
